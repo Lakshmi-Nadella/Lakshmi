@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #box{
+            height:200px;
+            width: 200px;
+            border-radius: 50%;
+            border: 2px solid black;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        #box1{
+            display: flex;
+            gap: 10px;
+        }
+        #btn1{
+        
+            height:100px;
+            width: 50px;
+            border: 2px solid black;;
+
+        }
+        #btn2{
+            
+            height:100px;
+            width: 50px;
+            border: 2px solid black;;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <div class="box1">
+    <button id="btn1" onclick="SwitchOn()">ON</button>
+    <button id="btn2" onclick="SwitchOff()">OFF</button>
+    </div>
+   <script>
+        
+        function SwitchOn(){
+            let ele=document.getElementById("box");
+            ele.style.backgroundColor=prompt("Enter the color");
+            
+        }
+        function SwitchOff(){
+            let ele1=document.getElementById("box");
+            ele1.style.backgroundColor="white";
+            
+
+        }
+
+    </script>
+</body>
+</html>
